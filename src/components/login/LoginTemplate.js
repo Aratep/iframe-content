@@ -14,7 +14,7 @@ class LoginTemplate extends Component {
             <div className="">
                 <div className="">
                     <span className='heading-text'>
-                        Вход в систему
+                        <h5>Вход в систему</h5>
                     </span>
                     <form onSubmit={handleSubmit}>
                         <p className='validation-error'>
@@ -53,13 +53,13 @@ class LoginTemplate extends Component {
                         </span>
                         <div className="form-buttons">
                             <span className="btn-group">
-                                <Link to='/registration' className="btn btn-danger ">
+                                <Link to='/registration' className="btn btn-danger btn-size">
                                     РЕГИСТРАЦИЯ
                                 </Link>
                             </span>
                             <span className="btn-group">
                                 <input
-                                    className="btn btn-primary"
+                                    className="btn btn-primary btn-size"
                                     type="submit" value="ВОЙТИ"/>
                             </span>
                         </div>

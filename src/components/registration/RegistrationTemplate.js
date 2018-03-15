@@ -16,8 +16,8 @@ class RegisterTemplate extends Component {
         return (
             <div className="container">
                 <div className="custom-row">
-                     <span className='heading-text'>
-                       Регистрация
+                    <span className='heading-text display-4  text-xs-center p-b-1 m-b-1'>
+                        <h5>Регистрация</h5>
                     </span>
                     <form onSubmit={handleSubmit} autoComplete='on'>
                         <p className='validation-error'>
@@ -90,13 +90,13 @@ class RegisterTemplate extends Component {
                         </div>
                         <div className="form-buttons">
                              <span>
-                                <Link className='btn btn-danger' to='/login'>
+                                <Link className='btn btn-danger btn-size' to='/login'>
                                     НАЗАД
                                 </Link>
                             </span>
                             <span className="">
                                 <input
-                                    className="btn btn-primary"
+                                    className="btn btn-primary btn-size"
                                     type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
                             </span>
                         </div>

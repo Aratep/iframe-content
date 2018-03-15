@@ -27,3 +27,21 @@
     float: right;
     margin-top:80px
 }
+
+
+@media screen and (max-width: 600px) {
+    /*.heading-text {font-size:20px}*/
+    .btn-size {font-size: 12px !important}
+
+}
+@media screen and (max-width: 300px) {
+    .heading-text {font-size:20px}
+    .btn-size {font-size: 12px !important; padding-left: 0; padding-right:0}
+
+}
+/*.btn-size {font-size:15px !important;}*/
+
+h5{
+    font-size: 1.0em;
+    font-weight: 700;
+}

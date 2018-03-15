@@ -12,8 +12,8 @@ class ResetTemplate extends Component {
         return (
             <div className="">
                 <div className="">
-                    <span className='heading-text'>
-                       Восстановление
+                    <span className='heading-text '>
+                       <h5>Восстановление</h5>
                     </span>
                     <form onSubmit={handleSubmit}>
                         <p className='validation-error'>
@@ -34,13 +34,13 @@ class ResetTemplate extends Component {
                         </div>
                         <div className="form-buttons">
                             <span className="">
-                                <Link to='/login' className="btn btn-primary ">
+                                <Link to='/login' className="btn btn-primary btn-size">
                                     НАЗАД
                                 </Link>
                             </span>
                             <span className="">
                                 <input
-                                    className="btn btn-danger "
+                                    className="btn btn-danger btn-size"
                                     type="submit"
                                     value="ВОССТАНОВИТЬ"/>
                             </span>
