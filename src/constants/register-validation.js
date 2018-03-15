@@ -12,6 +12,9 @@ const validate = values => {
     if (!values.password_reg_confirm) {
         errors.password_reg_confirm = 'Обязательное поле!'
     }
+    if (!values.captcha) {
+        errors.captcha = 'Обязательное поле!'
+    }
 
     // if (values.username_reg && values.username_reg.length < 6) {
     //     errors.username_reg = 'Username is too short'

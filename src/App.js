@@ -9,11 +9,11 @@ class App extends Component {
     render() {
         return (
             <Provider store={store}>
-                <div>
+                <div className='main-div'>
                     <div className="container">
                         <TabListComponent/>
                     </div>
-                    {/*<Footer/>*/}
+                    <Footer/>
                 </div>
             </Provider>
         );

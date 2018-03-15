@@ -23,12 +23,12 @@ class RegisterTemplate extends Component {
                         <p className='validation-error'>
                             {/*{regStatus}*/}
                         </p>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="username_reg"
                                 id='username_reg'
-                                className=''
+                                className='form-control'
                                 type="text"
                                 htmlFor='username_reg'
                                 placeholder="Имя"
@@ -36,12 +36,12 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="email_reg"
                                 id='email_reg'
-                                className='input w3-input w3-border'
+                                className='form-control'
                                 type="text"
                                 htmlFor='email_reg'
                                 placeholder="email@domain.com"
@@ -49,12 +49,12 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="password_reg"
                                 id='password_reg'
-                                className='input w3-input w3-border'
+                                className='form-control'
                                 type="password"
                                 htmlFor='password_reg'
                                 placeholder="●●●●●●●●"
@@ -62,12 +62,12 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="password_reg_confirm"
                                 id='password_reg_confirm'
-                                className='input w3-input w3-border'
+                                className='form-control'
                                 type="password"
                                 htmlFor='password_reg_confirm'
                                 placeholder="●●●●●●●●"
@@ -75,12 +75,12 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="captcha"
                                 id='captcha'
-                                className=''
+                                className='form-control'
                                 type="text"
                                 htmlFor='captcha'
                                 placeholder=""
@@ -88,25 +88,20 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div className="wrapper">
+                        <div className="form-buttons">
                              <span>
-                                <Link to='/login'>НАЗАД</Link>
+                                <Link className='btn btn-danger' to='/login'>
+                                    НАЗАД
+                                </Link>
                             </span>
-                            <span className="group-btn">
+                            <span className="">
                                 <input
-                                    className="w3-button w3-red w3-margin-bottom button"
+                                    className="btn btn-primary"
                                     type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
                             </span>
                         </div>
                     </form>
-                    {/*<p className="change_link">*/}
-                        {/*Already a member ?*/}
-                        {/*<Link to='/login' className="to_register"> Go and log in </Link>*/}
-                    {/*</p>*/}
                 </div>
-                {/*{*/}
-                    {/*redirectToReferrer === true && <Redirect to={from}/>*/}
-                {/*}*/}
             </div>
         );
     }

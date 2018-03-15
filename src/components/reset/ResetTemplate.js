@@ -19,12 +19,12 @@ class ResetTemplate extends Component {
                         <p className='validation-error'>
                             {/*{loginStatus}*/}
                         </p>
-                        <div>
+                        <div className='col-sm-6 '>
                             <Field
                                 tagName='input'
                                 name="email"
                                 id='email'
-                                className=''
+                                className='form-control'
                                 type="text"
                                 htmlFor='email'
                                 placeholder="email@domain.com"
@@ -32,15 +32,17 @@ class ResetTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div className="">
+                        <div className="form-buttons">
                             <span className="">
-
-                                <Link to='/login' className="">НАЗАД</Link>
+                                <Link to='/login' className="btn btn-primary ">
+                                    НАЗАД
+                                </Link>
                             </span>
                             <span className="">
                                 <input
-                                    className=""
-                                    type="submit" value="ВОССТАНОВИТЬ"/>
+                                    className="btn btn-danger "
+                                    type="submit"
+                                    value="ВОССТАНОВИТЬ"/>
                             </span>
                         </div>
                     </form>

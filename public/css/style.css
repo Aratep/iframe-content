@@ -13,3 +13,17 @@
     margin-bottom: 0!important;
     font-family: Helvetica,Verdana,Arial,sans-serif;
 }
+
+.main-div {
+    height: 100%;
+    width: 100%;
+}
+
+.form-buttons {
+    margin: 10px auto;
+}
+
+.footer {
+    float: right;
+    margin-top:80px
+}

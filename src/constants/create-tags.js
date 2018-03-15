@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const renderField = ({tagName, className, id, defaultValue, input, label, type, placeholder, htmlFor, icon, rows, cols, meta: {touched, error}}) => {
+export const renderField = ({tagName, className, id, labelClass, defaultValue, input, label, type, placeholder, htmlFor, icon, rows, cols, meta: {touched, error}}) => {
     const TagName = tagName ? tagName : 'input';
 
     return <div>
         <div>
-            <label htmlFor={htmlFor} data-icon={icon}>{label}</label>
+            <label htmlFor={htmlFor} className={labelClass} data-icon={icon}>{label}</label>
             <TagName {...input}
                      id={id}
                      className={className}
