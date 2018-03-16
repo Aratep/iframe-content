@@ -2,6 +2,7 @@
     color: red;
     font-size: 14px
 }
+
 .heading-text {
     color: #535c69;
     text-align: center;
@@ -10,8 +11,12 @@
     text-decoration: none;
     padding-top: 25px;
     border: 0;
-    margin-bottom: 0!important;
-    font-family: Helvetica,Verdana,Arial,sans-serif;
+    margin-bottom: 0 !important;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+.form-buttons {
+    float: left;
 }
 
 .main-div {
@@ -20,28 +25,208 @@
 }
 
 .form-buttons {
-    margin: 10px auto;
+    margin: 36px auto;
 }
 
 .footer {
     float: right;
-    margin-top:80px
+    margin-top: 80px
 }
 
+.label-style {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #535c69;
+}
 
+li:focus {
+    background-color:red !important;
+}
+div:focus {
+    background-color:red;
+}
+
+.block-div {
+    margin-top: 10px;
+}
+
+.input-size {
+    width: 210px;
+    height: 30px;
+    padding: 5px;
+}
+
+/*@media screen and (max-width: 600px) {*/
+/*!*.heading-text {font-size:20px}*!*/
+/*.btn-size {font-size: 12px !important}*/
+
+/*}*/
 @media screen and (max-width: 600px) {
-    /*.heading-text {font-size:20px}*/
-    .btn-size {font-size: 12px !important}
+    .heading-text {
+        font-size: 20px
+    }
+
+    .btn-size {
+        font-size: 12px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .input-size {
+        width: 195px
+    }
+    .label-style {
+        display: inline-block;
+        width: 140px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #535c69;
+    }
 
 }
-@media screen and (max-width: 300px) {
-    .heading-text {font-size:20px}
-    .btn-size {font-size: 12px !important; padding-left: 0; padding-right:0}
-
+.cust-btn-danger {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 0;
+    background: #f16451;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    color: #fff !important;
+    text-decoration: none !important;
 }
+
+.cust-btn-primary {
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 0;
+    background: #518ee2;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px 0 15px;
+    height: 33px;
+    outline: 0;
+}
+
 /*.btn-size {font-size:15px !important;}*/
 
-h5{
+h5 {
     font-size: 1.0em;
     font-weight: 700;
 }
+
+/*can use for other components*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.img-style {
+    height:20px;
+    width:70px
+}
+
+.nav-link {
+    background: #2d89ef;
+    color: #ffffff;
+    padding: 4px 40px;
+    font-size: 14px;
+}
+
+.nav-item > a:hover {
+    color: whitesmoke;
+}
+
+.nav .nav-tabs {
+    background: #eef2f4;
+    margin-top: 20px !important;
+    height:28px;
+}
+.margin-top {
+    margin-top: 20px
+}
+.nav-tabs {
+    border-bottom: 2px solid #2d89ef !important;
+    background: #eef2f4;
+}
+.nav-tabs .nav-link {
+     border: none !important;
+}
+
+.nav-tabs .nav-item {
+     margin-bottom: 0px !important;
+}
+
+.nav-item {
+    width: 220px
+}
+link, .nav-tabs .nav-link.active {
+    color: #2379a2;
+    font-size: 14px;
+    font-family: 'Segoe UI_','Open Sans',Verdana,Arial,Helvetica,sans-serif;
+    letter-spacing: 1px
+}
+.search-input {
+    height: 30px;
+}
+.search-button {
+    background: #ffffff;
+    border: 2px solid #eef2f4;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.link-style {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2379a2 !important;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sub-link {
+    font-size: 14px;
+    color: #2379a2;
+}
+.powered-by {
+    color: rgba(45,173,237,.6);
+    font-size: 14px
+}
+
+.footer  a:hover {
+    text-decoration: none !important;
+}
+.no-decor > a:hover {
+    text-decoration: none !important;
+    color: red !important;
+}
+.no-decor > a:hover .sub-link, .link-style {
+    color: rgba(45, 173, 237, 0.6);
+}
+
+
+/*a:hover a{*/
+    /*color: rgba(45, 173, 237, 0.6) !important;*/
+/*}*/
+
+/*a:hover {*/
+    /*text-decoration: none*/
+/*}*/
+
+/*.inner-addon .glyphicon {*/
+    /*position: absolute;*/
+    /*padding: 10px;*/
+    /*pointer-events: none;*/
+/*}*/
+/*.left-addon input  { padding-left:  30px; }*/
+/*.right-addon input { padding-right: 30px; }*/

@@ -10,7 +10,7 @@ class ResetTemplate extends Component {
         const {handleSubmit} = this.props;
 
         return (
-            <div className="">
+            <div className="center">
                 <div className="">
                     <span className='heading-text '>
                        <h5>Восстановление</h5>
@@ -19,12 +19,13 @@ class ResetTemplate extends Component {
                         <p className='validation-error'>
                             {/*{loginStatus}*/}
                         </p>
-                        <div className='col-sm-6 '>
+                        <div className=' '>
                             <Field
                                 tagName='input'
                                 name="email"
                                 id='email'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="text"
                                 htmlFor='email'
                                 placeholder="email@domain.com"
@@ -34,13 +35,13 @@ class ResetTemplate extends Component {
                         </div>
                         <div className="form-buttons">
                             <span className="">
-                                <Link to='/login' className="btn btn-primary btn-size">
+                                <Link to='/login' className="cust-btn-danger btn-size">
                                     НАЗАД
                                 </Link>
                             </span>
                             <span className="">
                                 <input
-                                    className="btn btn-danger btn-size"
+                                    className="cust-btn-primary btn-size"
                                     type="submit"
                                     value="ВОССТАНОВИТЬ"/>
                             </span>

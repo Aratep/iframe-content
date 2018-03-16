@@ -14,21 +14,22 @@ class RegisterTemplate extends Component {
 
 
         return (
-            <div className="container">
+            <div className="center">
                 <div className="custom-row">
-                    <span className='heading-text display-4  text-xs-center p-b-1 m-b-1'>
-                        <h5>Регистрация</h5>
+                    <span className='heading-text'>
+                        Регистрация
                     </span>
                     <form onSubmit={handleSubmit} autoComplete='on'>
                         <p className='validation-error'>
                             {/*{regStatus}*/}
                         </p>
-                        <div className='col-sm-6 '>
+                        <div className='block-div '>
                             <Field
                                 tagName='input'
                                 name="username_reg"
                                 id='username_reg'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="text"
                                 htmlFor='username_reg'
                                 placeholder="Имя"
@@ -36,12 +37,13 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div className='col-sm-6 '>
+                        <div className='block-div '>
                             <Field
                                 tagName='input'
                                 name="email_reg"
                                 id='email_reg'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="text"
                                 htmlFor='email_reg'
                                 placeholder="email@domain.com"
@@ -49,12 +51,13 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div className='col-sm-6 '>
+                        <div className='block-div '>
                             <Field
                                 tagName='input'
                                 name="password_reg"
                                 id='password_reg'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="password"
                                 htmlFor='password_reg'
                                 placeholder="●●●●●●●●"
@@ -62,41 +65,47 @@ class RegisterTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <div className='col-sm-6 '>
+                        <div className='block-div '>
                             <Field
                                 tagName='input'
                                 name="password_reg_confirm"
                                 id='password_reg_confirm'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="password"
                                 htmlFor='password_reg_confirm'
                                 placeholder="●●●●●●●●"
-                                label='Повторно введите пароль:'
+                                label='Повторно пароль:'
                                 component={renderField}
                             />
                         </div>
-                        <div className='col-sm-6 '>
+                        <div className='block-div '>
+                            {/*<label>*/}
+                                {/*<img className='img-style label-style' src='https://bespecular-blog.s3.amazonaws.com/blog74054e389122fd355363104c1990700d__t_e048fd7a0f1e.png'/>*/}
+                            {/*</label>*/}
                             <Field
                                 tagName='input'
                                 name="captcha"
                                 id='captcha'
-                                className='form-control'
+                                className='input-size'
+                                labelClass='label-style'
                                 type="text"
                                 htmlFor='captcha'
-                                placeholder=""
+                                placeholder="Введите цифры"
+                                data-icon='https://bespecular-blog.s3.amazonaws.com/blog74054e389122fd355363104c1990700d__t_e048fd7a0f1e.png'
                                 label=''
                                 component={renderField}
                             />
                         </div>
                         <div className="form-buttons">
                              <span>
-                                <Link className='btn btn-danger btn-size' to='/login'>
+                                <Link className='cust-btn-danger btn-size' to='/login'>
                                     НАЗАД
                                 </Link>
                             </span>
                             <span className="">
                                 <input
-                                    className="btn btn-primary btn-size"
+                                    className="cust-btn-primary btn-size"
                                     type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
                             </span>
                         </div>
