@@ -59,9 +59,9 @@ class LoginTemplate extends Component {
                                 <span style={linkStyle}>Восстановить</span>
                             </Link>
                         </span>
-                        <div className="form-buttons">
+                        <div className="form-buttons ">
                             <span className="">
-                                <Link to='/registration' className="btn-size cust-btn-danger">
+                                <Link to='/registration' className="btn-size cust-btn-danger ">
                                     РЕГИСТРАЦИЯ
                                 </Link>
                             </span>

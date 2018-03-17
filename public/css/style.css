@@ -1,6 +1,11 @@
 .validation-error {
-    color: red;
-    font-size: 14px
+    color: #ffffff;
+    background: red;
+    font-size: 14px;
+    margin-left: 150px;
+    display: block;
+    text-align: right;
+    margin-top: -3px;
 }
 
 .heading-text {
@@ -12,6 +17,7 @@
     padding-top: 25px;
     border: 0;
     margin-bottom: 0 !important;
+    margin-left: 85px;
     font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 
@@ -64,7 +70,7 @@ div:focus {
 /*.btn-size {font-size: 12px !important}*/
 
 /*}*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px)  {
     .heading-text {
         font-size: 20px
     }
@@ -84,6 +90,12 @@ div:focus {
         margin-right: 10px;
         font-size: 14px;
         color: #535c69;
+    }
+    .validation-error {
+        margin-left: 0
+    }
+    .heading-text{
+        margin-left: 0;
     }
 
 }
@@ -214,6 +226,13 @@ hr {
     color: rgba(45, 173, 237, 0.6);
 }
 
+/*.form-buttons > .space:not(:last-child) {*/
+    /*margin-right: 100px !important;*/
+/*}*/
+
+.form-buttons {
+    margin: 24px auto;
+}
 
 /*a:hover a{*/
     /*color: rgba(45, 173, 237, 0.6) !important;*/

@@ -13,7 +13,7 @@ class ResetTemplate extends Component {
             <div className="center">
                 <div className="">
                     <span className='heading-text '>
-                       <h5>Восстановление</h5>
+                       Восстановление
                     </span>
                     <form onSubmit={handleSubmit}>
                         <p className='validation-error'>
