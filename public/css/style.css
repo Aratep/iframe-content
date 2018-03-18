@@ -65,11 +65,6 @@ div:focus {
     padding: 5px;
 }
 
-/*@media screen and (max-width: 600px) {*/
-/*!*.heading-text {font-size:20px}*!*/
-/*.btn-size {font-size: 12px !important}*/
-
-/*}*/
 @media screen and (max-width: 500px)  {
     .heading-text {
         font-size: 20px
@@ -81,7 +76,7 @@ div:focus {
         padding-right: 0 !important;
     }
     .input-size {
-        width: 195px
+        width: 180px
     }
     .label-style {
         display: inline-block;
@@ -96,6 +91,15 @@ div:focus {
     }
     .heading-text{
         margin-left: 0;
+    }
+    link, .nav-tabs .nav-link.active {
+        padding: 10px;
+    }
+    .nav-tabs .nav-link {
+        padding: 10px;
+    }
+    .margin-left {
+        margin-left: 0
     }
 
 }
@@ -128,7 +132,6 @@ div:focus {
     outline: 0;
 }
 
-/*.btn-size {font-size:15px !important;}*/
 
 h5 {
     font-size: 1.0em;
@@ -154,7 +157,7 @@ h5 {
 }
 
 .nav-item > a:hover {
-    color: whitesmoke;
+    color: rgba(45,173,237,.6);
 }
 
 .nav .nav-tabs {
@@ -212,7 +215,8 @@ hr {
 }
 .powered-by {
     color: rgba(45,173,237,.6);
-    font-size: 14px
+    font-size: 14px;
+    padding-right: 10px;
 }
 
 .footer  a:hover {
@@ -220,32 +224,30 @@ hr {
 }
 .no-decor > a:hover {
     text-decoration: none !important;
-    color: red !important;
 }
 .no-decor > a:hover .sub-link, .link-style {
     color: rgba(45, 173, 237, 0.6);
 }
 
-/*.form-buttons > .space:not(:last-child) {*/
-    /*margin-right: 100px !important;*/
-/*}*/
-
 .form-buttons {
     margin: 24px auto;
 }
+.nav-link {
+    color: #2379a2 ;
+    background: #eef2f4 ;
+}
+link, .nav-tabs .nav-link.active {
+    background: #2d89ef !important;
+    color: #ffffff !important;
+}
 
-/*a:hover a{*/
-    /*color: rgba(45, 173, 237, 0.6) !important;*/
-/*}*/
+.form-buttons > li {
+    list-style: none;
+    float:left;
+    /*margin-top: 5px;*/
+}
 
-/*a:hover {*/
-    /*text-decoration: none*/
-/*}*/
+.margin-left {
+    margin-left: 85px;
+}
 
-/*.inner-addon .glyphicon {*/
-    /*position: absolute;*/
-    /*padding: 10px;*/
-    /*pointer-events: none;*/
-/*}*/
-/*.left-addon input  { padding-left:  30px; }*/
-/*.right-addon input { padding-right: 30px; }*/

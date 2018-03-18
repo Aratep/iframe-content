@@ -11,6 +11,10 @@ const linkStyle = {
     float: 'right'
 };
 
+const margin = {
+    marginTop: 5 + 'px',
+}
+
 class LoginTemplate extends Component {
     render() {
         // const {handleSubmit, loginStatus, redirectToReferrer, loading} = this.props;
@@ -59,18 +63,34 @@ class LoginTemplate extends Component {
                                 <span style={linkStyle}>Восстановить</span>
                             </Link>
                         </span>
-                        <div className="form-buttons ">
-                            <span className="">
+                        <ul className='form-buttons'>
+                            <li style={margin}>
+                                <span className="">
                                 <Link to='/registration' className="btn-size cust-btn-danger ">
                                     РЕГИСТРАЦИЯ
                                 </Link>
                             </span>
-                            <span className="">
+                            </li>
+                            <li className=''>
+                                <span className="">
                                 <input
                                     className="btn-size cust-btn-primary  "
                                     type="submit" value="ВОЙТИ"/>
                             </span>
-                        </div>
+                            </li>
+                        </ul>
+                        {/*<div className="form-buttons ">*/}
+                            {/*<span className="">*/}
+                                {/*<Link to='/registration' className="btn-size cust-btn-danger ">*/}
+                                    {/*РЕГИСТРАЦИЯ*/}
+                                {/*</Link>*/}
+                            {/*</span>*/}
+                            {/*<span className="">*/}
+                                {/*<input*/}
+                                    {/*className="btn-size cust-btn-primary  "*/}
+                                    {/*type="submit" value="ВОЙТИ"/>*/}
+                            {/*</span>*/}
+                        {/*</div>*/}
                     </form>
                 </div>
             </div>
