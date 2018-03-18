@@ -1,11 +1,12 @@
 .validation-error {
-    color: #ffffff;
-    background: red;
+    color: red;
+    /*background: red;*/
     font-size: 14px;
     margin-left: 150px;
     display: block;
-    text-align: right;
+    /*text-align: right;*/
     margin-top: -3px;
+    margin-right: 5px;
 }
 
 .heading-text {
@@ -23,15 +24,13 @@
 
 .form-buttons {
     float: left;
+    margin: 10px auto;
+    margin-left: 85px !important;
 }
 
 .main-div {
     height: 100%;
     width: 100%;
-}
-
-.form-buttons {
-    margin: 36px auto;
 }
 
 .footer {
@@ -69,7 +68,6 @@ div:focus {
     .heading-text {
         font-size: 20px
     }
-
     .btn-size {
         font-size: 12px !important;
         padding-left: 0 !important;
@@ -87,7 +85,8 @@ div:focus {
         color: #535c69;
     }
     .validation-error {
-        margin-left: 0
+        margin-left: 0;
+        margin-right: 0;
     }
     .heading-text{
         margin-left: 0;
@@ -101,7 +100,9 @@ div:focus {
     .margin-left {
         margin-left: 0
     }
-
+    .form-buttons {
+        margin-left:0 !important;
+    }
 }
 .cust-btn-danger {
     -webkit-border-radius: 5px;
@@ -145,8 +146,8 @@ h5 {
     align-items: center
 }
 .img-style {
-    height:20px;
-    width:70px
+    height: 30px;
+    width: 100px;
 }
 
 .nav-link {
@@ -229,9 +230,6 @@ hr {
     color: rgba(45, 173, 237, 0.6);
 }
 
-.form-buttons {
-    margin: 24px auto;
-}
 .nav-link {
     color: #2379a2 ;
     background: #eef2f4 ;
@@ -244,7 +242,6 @@ link, .nav-tabs .nav-link.active {
 .form-buttons > li {
     list-style: none;
     float:left;
-    /*margin-top: 5px;*/
 }
 
 .margin-left {

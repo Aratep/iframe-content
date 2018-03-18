@@ -22,7 +22,8 @@ class KnowledgeBase extends Component {
                             <div className="row">
                                 <div className="col ">
                                     <div className='no-decor'>
-                                        <i className="fas fa-book"/> <a href='#'>
+                                        <i className="fas fa-book"/>
+                                        <a href='#'>
                                             <span className='link-style'>
                                                 Начало работы
                                             </span>

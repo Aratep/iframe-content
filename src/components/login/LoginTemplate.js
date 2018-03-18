@@ -58,11 +58,11 @@ class LoginTemplate extends Component {
                                 component={renderField}
                             />
                         </div>
-                        <span>
+                        <div>
                             <Link to='/reset' className='link'>
                                 <span style={linkStyle}>Восстановить</span>
                             </Link>
-                        </span>
+                        </div>
                         <ul className='form-buttons'>
                             <li style={margin}>
                                 <span className="">
