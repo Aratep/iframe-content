@@ -79,18 +79,6 @@ class LoginTemplate extends Component {
                             </span>
                             </li>
                         </ul>
-                        {/*<div className="form-buttons ">*/}
-                            {/*<span className="">*/}
-                                {/*<Link to='/registration' className="btn-size cust-btn-danger ">*/}
-                                    {/*РЕГИСТРАЦИЯ*/}
-                                {/*</Link>*/}
-                            {/*</span>*/}
-                            {/*<span className="">*/}
-                                {/*<input*/}
-                                    {/*className="btn-size cust-btn-primary  "*/}
-                                    {/*type="submit" value="ВОЙТИ"/>*/}
-                            {/*</span>*/}
-                        {/*</div>*/}
                     </form>
                 </div>
             </div>

@@ -80,10 +80,6 @@ class RegisterTemplate extends Component {
                             />
                         </div>
                         <div className='block-div '>
-                            {/*<label className='label-style' htmlFor='captcha'>*/}
-                                {/*captcha*/}
-                                {/*/!*<img className='img-style' src='https://bespecular-blog.s3.amazonaws.com/blog74054e389122fd355363104c1990700d__t_e048fd7a0f1e.png'/>*!/*/}
-                            {/*</label>*/}
                             <Field
                                 tagName='input'
                                 name="captcha"
