@@ -21,7 +21,7 @@ class KnowledgeBase extends Component {
                         <div className="">
                             <div className="row">
                                 <div className="col ">
-                                    <div className='no-decor'>
+                                    <div className='no-decor dist'>
                                         <i className="fas fa-book"/>
                                         <a href='#'>
                                             <span className='link-style'>
@@ -31,7 +31,7 @@ class KnowledgeBase extends Component {
                                     </div>
                                     <hr/>
                                     <div>
-                                        <div className='no-decor'>
+                                        <div className='no-decor '>
                                             <i className="fas fa-file"/>&nbsp;
                                             <a href='#'>
                                                 <span className='sub-link'>
@@ -59,7 +59,7 @@ class KnowledgeBase extends Component {
 
                                 </div>
                                 <div className="col ">
-                                    <div  className='no-decor'>
+                                    <div  className='no-decor dist'>
                                     <i className="fas fa-book"/> <a style={linkStyle} href='#'>
                                         <span className='link-style'>
                                             Базовая настройка системы
@@ -115,7 +115,7 @@ class KnowledgeBase extends Component {
                             <div className="row">
                                 <div className="col ">
                                     <div className='margin-top'>
-                                        <div className='no-decor'>
+                                        <div className='no-decor dist'>
                                             <i className="fas fa-book"/> <a href='#'>
                                                 <span className='link-style'>
                                                      Продвинутая настройка системы
@@ -170,7 +170,7 @@ class KnowledgeBase extends Component {
                                 </div>
                                 <div className="col ">
                                     <div className='margin-top'>
-                                        <div className='no-decor'>
+                                        <div className='no-decor dist'>
                                             <i className="fas fa-book"/> <a style={linkStyle} href='#'>
                                             <span className='link-style'>
                                                 Работа с заявками

@@ -60,25 +60,37 @@ class LoginTemplate extends Component {
                         </div>
                         <div>
                             <Link to='/reset' className='link'>
-                                <span style={linkStyle}>Восстановить</span>
+                                <span style={linkStyle} className='link'>Восстановить</span>
                             </Link>
                         </div>
-                        <ul className='form-buttons'>
-                            <li style={margin}>
-                                <span className="">
-                                <Link to='/registration' className="btn-size cust-btn-danger ">
+                        <div className="form-buttons">
+                             <span>
+                                <Link className='cust-btn-danger btn-size' to='/registration'>
                                     РЕГИСТРАЦИЯ
                                 </Link>
                             </span>
-                            </li>
-                            <li className=''>
-                                <span className="">
+                            <span className="">
                                 <input
-                                    className="btn-size cust-btn-primary  "
+                                    className="cust-btn-primary btn-size"
                                     type="submit" value="ВОЙТИ"/>
                             </span>
-                            </li>
-                        </ul>
+                        </div>
+                        {/*<ul className='form-buttons'>*/}
+                            {/*<li style={margin}>*/}
+                                {/*<span className="">*/}
+                                {/*<Link to='/registration' className="btn-size cust-btn-danger ">*/}
+                                    {/*РЕГИСТРАЦИЯ*/}
+                                {/*</Link>*/}
+                            {/*</span>*/}
+                            {/*</li>*/}
+                            {/*<li className=''>*/}
+                                {/*<span className="">*/}
+                                {/*<input*/}
+                                    {/*className="btn-size cust-btn-primary  "*/}
+                                    {/*type="submit" value="ВОЙТИ"/>*/}
+                            {/*</span>*/}
+                            {/*</li>*/}
+                        {/*</ul>*/}
                     </form>
                 </div>
             </div>
