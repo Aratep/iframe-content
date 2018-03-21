@@ -330,16 +330,18 @@ link, .nav-tabs .nav-link.active {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: rgba(0,0,0,.4);
+    background-color: grey
+    /*background-color: rgba(0,0,0,.4);*/
     /*background-color: rgba(0,0,0,.4);*/
 }
 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: aliceblue;
+    background: #B0E0E6;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #F0F8FF;
 }
