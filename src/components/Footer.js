@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div className='footer'>
                 <a className='powered-by'
-                    target="_blank"
+                   target="_blank"
                    rel="noopener noreferrer"
                    href='https://helpdeskeddy.ru/'>
                     Powered by HelpDeskEddy

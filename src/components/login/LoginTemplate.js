@@ -23,75 +23,57 @@ class LoginTemplate extends Component {
         return (
             <div className="center">
                 <div className="">
-                    <span className='heading-text'>
-                        Вход в систему
-                    </span>
-                    <form onSubmit={handleSubmit}>
-                        <p className='validation-error'>
-                            {/*{loginStatus}*/}
-                        </p>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="email"
-                                id='email'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="text"
-                                htmlFor='email'
-                                placeholder="email@domain.com"
-                                label='Э-почта:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className='block-div'>
-                            <Field
-                                tagName='input'
-                                name="password"
-                                id='password'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="password"
-                                htmlFor='password'
-                                placeholder="●●●●●●●●"
-                                label='Пароль:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div>
-                            <Link to='/reset' className='link'>
-                                <span style={linkStyle} className='link'>Восстановить</span>
-                            </Link>
-                        </div>
-                        <div className="form-buttons">
-                             <span>
-                                <Link className='cust-btn-danger btn-size' to='/registration'>
-                                    РЕГИСТРАЦИЯ
+                    <div className="">
+                        <span className="heading-text">Вход в систему</span>
+                    </div>
+                    <div className="card-body">
+                        <form className="form" onSubmit={handleSubmit} autoComplete="on">
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Э-почта:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="email"
+                                        id='email'
+                                        className='form-control'
+                                        type="text"
+                                        htmlFor='email'
+                                        placeholder="email@domain.com"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Пароль:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="password"
+                                        id='password'
+                                        className='form-control'
+                                        type="password"
+                                        htmlFor='password'
+                                        placeholder="*******"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className='link-div'>
+                                <Link to='/reset' className='no-decor'>
+                                    <span  className='link'>Восстановить</span>
                                 </Link>
-                            </span>
-                            <span className="">
-                                <input
-                                    className="cust-btn-primary btn-size"
-                                    type="submit" value="ВОЙТИ"/>
-                            </span>
-                        </div>
-                        {/*<ul className='form-buttons'>*/}
-                            {/*<li style={margin}>*/}
-                                {/*<span className="">*/}
-                                {/*<Link to='/registration' className="btn-size cust-btn-danger ">*/}
-                                    {/*РЕГИСТРАЦИЯ*/}
-                                {/*</Link>*/}
-                            {/*</span>*/}
-                            {/*</li>*/}
-                            {/*<li className=''>*/}
-                                {/*<span className="">*/}
-                                {/*<input*/}
-                                    {/*className="btn-size cust-btn-primary  "*/}
-                                    {/*type="submit" value="ВОЙТИ"/>*/}
-                            {/*</span>*/}
-                            {/*</li>*/}
-                        {/*</ul>*/}
-                    </form>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-2 col-form-label form-control-label"></label>
+                                <div className="col-sm-10">
+                                    <Link className='cust-btn btn btn-danger' to='/registration'>
+                                        РЕГИСТРАЦИЯ
+                                    </Link>
+                                    <input type="submit" className="right cust-btn btn btn-primary" value="ВОЙТИ"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         );

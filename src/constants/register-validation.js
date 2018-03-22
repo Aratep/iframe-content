@@ -20,7 +20,7 @@ const validate = values => {
     //     errors.username_reg = 'Username is too short'
     // }
     if (values.email_reg && !values.email_reg.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-        errors.email_reg = 'Недействительная Э-почта!'
+        errors.email_reg = 'example@gmail.com!'
     }
 
 //     if (values.password_reg && !values.password_reg.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/)) {

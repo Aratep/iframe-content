@@ -15,99 +15,100 @@ class RegisterTemplate extends Component {
 
         return (
             <div className="center">
-                <div className="custom-row">
-                    <span className='heading-text'>
-                        Регистрация
-                    </span>
-                    <form onSubmit={handleSubmit} autoComplete='on'>
-                        <p className='validation-error'>
-                            {/*{regStatus}*/}
-                        </p>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="username_reg"
-                                id='username_reg'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="text"
-                                htmlFor='username_reg'
-                                placeholder="Имя"
-                                label='Имя:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="email_reg"
-                                id='email_reg'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="text"
-                                htmlFor='email_reg'
-                                placeholder="email@domain.com"
-                                label='Э-почта:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="password_reg"
-                                id='password_reg'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="password"
-                                htmlFor='password_reg'
-                                placeholder="●●●●●●●●"
-                                label='Пароль:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="password_reg_confirm"
-                                id='password_reg_confirm'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="password"
-                                htmlFor='password_reg_confirm'
-                                placeholder="●●●●●●●●"
-                                label='Повторно пароль:'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className='block-div '>
-                            <Field
-                                tagName='input'
-                                name="captcha"
-                                id='captcha'
-                                className='input-size'
-                                labelClass='label-style'
-                                type="text"
-                                htmlFor='captcha'
-                                placeholder="Введите цифры"
-                                imgClass='img-style'
-                                src='https://thefallenbrain.files.wordpress.com/2016/05/input-black.gif?w=816'
-                                alt='captcha'
-                                component={renderField}
-                            />
-                        </div>
-                        <div className="form-buttons">
-                             <span>
-                                <Link className='cust-btn-danger btn-size' to='/login'>
-                                    НАЗАД
-                                </Link>
-                            </span>
-                            <span className="">
-                                <input
-                                    className="cust-btn-primary btn-size"
-                                    type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
-                            </span>
-                        </div>
-                    </form>
+                <div className="">
+                    <div className="">
+                        <span className="heading-text">Регистрация</span>
+                    </div>
+                    <div className="card-body">
+                        <form className="form" onSubmit={handleSubmit} autoComplete="on">
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Имя:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="username_reg"
+                                        id='username_reg'
+                                        className='form-control'
+                                        type="text"
+                                        htmlFor='username_reg'
+                                        placeholder="Имя"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Э-почта:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="email_reg"
+                                        id='email_reg'
+                                        className='form-control'
+                                        type="text"
+                                        htmlFor='email_reg'
+                                        placeholder="email@domain.com"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Пароль:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="password_reg"
+                                        id='password_reg'
+                                        className='form-control'
+                                        type="password"
+                                        htmlFor='password_reg'
+                                        placeholder="*******"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">Повторно пароль:</label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="password_reg_confirm"
+                                        id='password_reg_confirm'
+                                        className='form-control'
+                                        type="password"
+                                        htmlFor='password_reg_confirm'
+                                        placeholder="*******"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-4 col-form-label form-control-label">
+                                    <img src='https://thefallenbrain.files.wordpress.com/2016/05/input-black.gif?w=816' className='img-style' alt='captcha'/>
+                                </label>
+                                <div className='col-sm-8'>
+                                    <Field
+                                        tagName='input'
+                                        name="captcha"
+                                        id='captcha'
+                                        className='form-control'
+                                        type="text"
+                                        htmlFor='captcha'
+                                        placeholder="Введите цифры"
+                                        component={renderField}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-group row">
+                                <label className="col-sm-2 col-form-label form-control-label"></label>
+                                <div className="col-sm-10">
+                                    <Link className='cust-btn btn btn-danger' to='/login'>
+                                        НАЗАД
+                                    </Link>
+                                    <input type="submit" className="right cust-btn btn btn-primary" value="ЗАРЕГИСТРИРОВАТЬСЯ"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         );
