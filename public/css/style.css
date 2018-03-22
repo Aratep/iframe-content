@@ -389,7 +389,6 @@ link, .nav-tabs .nav-link.active {
     font-size: 16px;
     text-transform: uppercase;
     color: #fff !important;
-    padding: 3px 12px;
 }
 .right {
     float: right ;
