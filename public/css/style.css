@@ -63,7 +63,7 @@ div:focus {
     padding: 5px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 320px) {
     .heading-text {
         font-size: 18px;
         padding-top: 0 !important;
@@ -145,11 +145,6 @@ div:focus {
     .col-form-label {
         text-align: left !important;
     }
-    .btn, .cust-btn {
-        font-size:11px !important;
-        padding-right: 5px !important;
-        padding-left: 5px !important;
-    }
     .link-div {
         margin-bottom: 0 !important;
     }
@@ -160,9 +155,31 @@ div:focus {
         height: 15px !important;
         width: 85px !important;
     }
+
+}
+@media screen and (max-width: 576px) {
+    .col-form-label {
+        text-align: left !important;
+    }
+    .btn, .cust-btn {
+        font-size:13px !important;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        width: 100%;
+    }
+    .heading-text {
+        font-size: 18px;
+        padding-top: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 321px) {
+    .col-form-label {
+        text-align: left !important;
+    }
     .right {
         float: none !important;
     }
@@ -170,6 +187,10 @@ div:focus {
         font-size:11px !important;
         padding-right: 5px;
         padding-left: 5px;
+    }
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 
