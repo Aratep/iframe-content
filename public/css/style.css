@@ -130,9 +130,6 @@ div:focus {
     .sub-link {
         font-size: 12px !important;
     }
-    .dist {
-        margin-top: 20px !important;
-    }
     .nav-link {
         font-size: 13px !important;
     }
@@ -155,13 +152,24 @@ div:focus {
         height: 15px !important;
         width: 85px !important;
     }
-
 }
+
+@media screen and (max-width: 400px) {
+    .row {
+        display: block;
+    }
+    .dist {
+        margin-top: 20px !important;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .col-form-label {
         text-align: left !important;
     }
     .btn, .cust-btn {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
         font-size:13px !important;
         padding-right: 5px !important;
         padding-left: 5px !important;
@@ -174,25 +182,29 @@ div:focus {
         justify-content: center;
         align-items: center;
     }
+    .nav-item {
+        width: 100% !important;
+    }
+
 }
 
-@media screen and (max-width: 321px) {
-    .col-form-label {
-        text-align: left !important;
-    }
-    .right {
-        float: none !important;
-    }
-    .btn, .cust-btn {
-        font-size:11px !important;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    .container {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-}
+/*@media screen and (max-width: 321px) {*/
+    /*.col-form-label {*/
+        /*text-align: left !important;*/
+    /*}*/
+    /*.right {*/
+        /*float: none !important;*/
+    /*}*/
+    /*.btn, .cust-btn {*/
+        /*font-size:11px !important;*/
+        /*padding-right: 5px;*/
+        /*padding-left: 5px;*/
+    /*}*/
+    /*.container {*/
+        /*padding-right: 10px;*/
+        /*padding-left: 10px;*/
+    /*}*/
+/*}*/
 
 h5 {
     font-size: 1.0em;
@@ -332,8 +344,6 @@ link, .nav-tabs .nav-link.active {
 /* Track */
 ::-webkit-scrollbar-track {
     background-color: grey
-    /*background-color: rgba(0,0,0,.4);*/
-    /*background-color: rgba(0,0,0,.4);*/
 }
 
 
@@ -385,6 +395,8 @@ link, .nav-tabs .nav-link.active {
     text-decoration: none
 }
 .cust-btn {
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;

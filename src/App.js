@@ -13,7 +13,7 @@ class App extends Component {
                     <div className="container">
                         <TabListComponent/>
                     </div>
-                    <Footer/>
+                    {/*<Footer/>*/}
                 </div>
             </Provider>
         );
